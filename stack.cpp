@@ -1,8 +1,9 @@
-#include <stdio.h>
+#include <iostream>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
- 
+using namespace std;
+
 struct Stack{
     int top;
     unsigned capacity;
@@ -58,3 +59,9 @@ int evaluatePostfix(char* exp){
     return pop(stack);
 }
 
+int main(){
+    char exp[] = "231*+9-";
+    cout<<"nilai dari "<<exp<<endl;
+    cout<<"adalah "<<evaluatePostfix;
+    return 0;
+}
